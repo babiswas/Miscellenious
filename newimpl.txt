@@ -1,0 +1,125 @@
+{
+    "links": {
+        "self": "https://captivateprimestage1.adobe.com/primeapi/v2/learningObjects?page[limit]=10&include=instances.loResources.resources&ids=learningProgram:39779&filter.loTypes=learningProgram&sort=name"
+    },
+    "data": [
+        {
+            "id": "learningProgram:39779",
+            "type": "learningObject",
+            "attributes": {
+                "dateCreated": "2019-11-29T09:34:24.000Z",
+                "dateUpdated": "2019-11-29T10:44:51.000Z",
+                "duration": 3300,
+                "effectiveModifiedDate": "2019-11-29T10:44:51.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": true,
+                "loType": "learningProgram",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": "MERRRRR",
+                        "overview": ""
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "name": "MERRRR"
+                    },
+                    {
+                        "locale": "de-DE",
+                        "name": "BERRRRR"
+                    }
+                ]
+            },
+            "relationships": {
+                "instances": {
+                    "data": [
+                        {
+                            "id": "learningProgram:39779_46644",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:2023898_40835",
+                            "type": "learningObjectSkill"
+                        },
+                        {
+                            "id": "course:2023899_40835",
+                            "type": "learningObjectSkill"
+                        },
+                        {
+                            "id": "course:2023900_40835",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                },
+                "subLOs": {
+                    "data": [
+                        {
+                            "id": "course:2023899",
+                            "type": "learningObject"
+                        },
+                        {
+                            "id": "course:2023898",
+                            "type": "learningObject"
+                        },
+                        {
+                            "id": "course:2023900",
+                            "type": "learningObject"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "included": [
+        {
+            "id": "learningProgram:39779_46644",
+            "type": "learningObjectInstance",
+            "attributes": {
+                "dateCreated": "2019-11-29T09:39:58.000Z",
+                "isDefault": true,
+                "isFlexible": false,
+                "state": "Active",
+                "localizedMetadata": [
+                    {
+                        "locale": "en-US",
+                        "name": "Instance par défaut"
+                    }
+                ]
+            },
+            "relationships": {
+                "learningObject": {
+                    "data": {
+                        "id": "learningProgram:39779",
+                        "type": "learningObject"
+                    }
+                },
+                "subLoInstances": {
+                    "data": [
+                        {
+                            "id": "course:2023898_3703216",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:2023899_3703217",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:2023900_3703218",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+import pandas as pd
+drinks=pd.read_csv("filename")
+drinks.head()
+drinks.continent.head()
+drinks.set_index('country',inplace=True)
+drinks.continent.head()
+drinks.continent.value_counts().values
+drinks.continent.value_counts()['Africa']
+drinks.continent.value_counts()['Africa']
+drinks.continent.value_counts.sort_index()
+
+people=pd.Series([3000,4000],index=['A','B'],name='population')
+pd.concat([drinks,people],axis=1).head()
+
+
+
+
+
